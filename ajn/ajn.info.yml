@@ -1,0 +1,6 @@
+name: 'AJMI E-learning'
+description: 'Customizations for AJ Media Institute E-learning.'
+package: Custom
+
+type: module
+core: '8.x'

@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function ajn_theme() {
+  return [
+    //admin login screen
+    'user_login_form' => [
+  	  'render element' => 'form',
+    ],
+    'user_register_form' => [
+	     'render element' => 'form',
+    ],
+    'user_pass' => [
+	     'render element' => 'form',
+    ],
+  ];
+}
