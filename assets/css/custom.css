@@ -1,0 +1,69 @@
+body {
+  font-family: 'Helvetica Neue LT Std';
+}
+.page-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.page-logo a:hover {
+  text-decoration: none;
+  color: rgb(218, 159, 38);
+}
+.page-header {
+  color: rgb(218, 159, 38);
+  font-weight: bold;
+  font-size: 28px;
+}
+.color-change {
+  color: white!important;
+}
+
+.my-nav  {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.sign-button {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.sign-button .first {
+  background-color: white;
+}
+.sign-button .second {
+  background-color: rgb(219, 161, 36);
+}
+
+.my-nav .navbar-collapse ul {
+  background-color: rgb(33, 33, 33);
+}
+.my-nav .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.dif-nav .first {
+  background-color: white;
+  padding: 15px 56px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.dif-nav .first .nav-link {
+  color: black!important;
+}
+
+.dif-nav .second {
+  background-color: rgb(219, 161, 36);
+  padding: 15px 83px;
+  font-size: 18px;
+}
+.carousel-caption {
+  right: auto;
+  left: 10%;
+}

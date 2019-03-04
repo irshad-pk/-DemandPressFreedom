@@ -1,0 +1,86 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .carousel-caption h5 {
+    font-size: 14px!important;
+  }
+  .carousel-caption p {
+    font-size: 10px!important;
+  }
+  .carousel-caption {
+    left: 0;
+    bottom: -15px!important;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .sign-button {
+    top: 37px!important;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+.dif-nav {
+  display: none;
+}
+.page-logo {
+  background-color: rgb(37, 37, 37);
+}
+  .sign-button {
+    top: 100px;
+  }
+  .my-nav {
+    width: 100%!important;
+    padding: 0;
+    background-color: rgb(33, 33, 33);
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .my-nav .navbar-collapse .navbar-nav .nav-item {
+    padding: 10px;
+  }
+  .my-nav .navbar-collapse ul  {
+    width: 100%;
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .my-nav .navbar-collapse .navbar-nav .nav-item {
+    padding: 15px;
+  }
+  .dif-nav {
+    width: 40%!important;
+  }
+  .sign-button {
+    display: none;
+  }
+  .page-logo {
+    background-color: black!important;
+  }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .carousel-inner .carousel-item {
+    height: 650px;
+  }
+ }
