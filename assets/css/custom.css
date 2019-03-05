@@ -1,69 +1,224 @@
 body {
   font-family: 'Helvetica Neue LT Std';
 }
-.page-logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-.page-logo a:hover {
-  text-decoration: none;
-  color: rgb(218, 159, 38);
-}
 .page-header {
-  color: rgb(218, 159, 38);
+  color: rgb(218, 159, 38)!important;
   font-weight: bold;
   font-size: 28px;
 }
 .color-change {
   color: white!important;
 }
-
-.my-nav  {
+.navbar {
   position: absolute;
-  top: 32px;
+  top: 0px;
   right: 0;
   left: 0;
   z-index: 1030;
-}
-
-.sign-button {
-  position: absolute;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-.sign-button .first {
-  background-color: white;
-}
-.sign-button .second {
-  background-color: rgb(219, 161, 36);
-}
-
-.my-nav .navbar-collapse ul {
-  background-color: rgb(33, 33, 33);
-}
-.my-nav .navbar-nav .nav-item .nav-link {
-  color: white;
-}
-.dif-nav .first {
-  background-color: white;
-  padding: 15px 56px;
-  font-weight: bold;
-  font-size: 18px;
-}
-.dif-nav .first .nav-link {
-  color: black!important;
-}
-
-.dif-nav .second {
-  background-color: rgb(219, 161, 36);
-  padding: 15px 83px;
-  font-size: 18px;
 }
 .carousel-caption {
   right: auto;
   left: 10%;
+}
+
+/* common color utility */
+.cm {
+  color: rgb(218, 159, 38)!important;
+}
+.cm-bg {
+  background-color: rgb(218, 159, 38)!important;
+  color: white;
+}
+/* common button utility */
+.cm-bt {
+  border-radius: 0!important;
+  color: rgb(66,66,66)!important;
+  border-color: rgb(66,66,66)!important;
+}
+.cm-bt-w {
+  color: white;
+  border-color: white;
+  border-radius: 0;
+}
+.cm-bt-w:hover {
+  color: black;
+  background-color: white;
+}
+
+
+.principles {
+  background-color: white;
+  border-bottom: 5px solid black;
+}
+.principles .principle-head a {
+  border: 1px solid rgb(218, 159, 38)!important;
+}
+.principles .card {
+  border: none;
+}
+.principles .card .cm-bg {
+  padding: 7px;
+}
+.principles .principle-head a:hover {
+  color: black;
+}
+.principles .card:hover {
+  transform: scale(1.1);
+}
+
+.events {
+  background-image: url('https://picsum.photos/1245/700/?blur');
+}
+.events .events-head a,.media .media-head {
+  color: white;
+  border: 2px solid white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.events .events-head a:hover {
+  color: white;
+}
+.events .ev-tit h6 {
+  color: white;
+  font-weight: bold;
+}
+.events .ev-tit p {
+  font-size: 10px;
+}
+.events .ev-desc p {
+  font-size: 14px;
+}
+.events .ev {
+  height: 100%;
+  background-color: rgb(22, 20, 21);
+}
+.events .ev:hover {
+  background-color: white;
+}
+.events .ev-tit h6:hover {
+  color: black;
+}
+
+.events img:hover {
+  transform: scale(1.1);
+}
+
+.media {
+  background-color: rgb(37, 37, 39);
+}
+.media .card {
+  background-color: unset!important;
+  border: none;
+}
+.media .card .social-icons ul{
+  float: right;
+  flex-wrap: nowrap;
+}
+.media .card .social-icons .nav-item a {
+  color: rgb(37, 37, 39);
+  padding: 0 3px;
+  font-size: 12px;
+}
+.media .card .social-icons .nav li {
+  border-radius: 20px;
+  background-color: white;
+}
+.media .card .social-icons .nav li:hover {
+  background-color: rgb(218, 159, 38);
+}
+.media .card-body img {
+  z-index: 1;
+  position: absolute;
+  margin-top: -23%;
+}
+/* image rotate */
+.media .card-body img:hover {
+  cursor: default;
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out 0s;
+  border-radius: 50%;
+}
+.media .card-body h5 ,.media .card-body p {
+  color: rgb(172, 164, 168);
+}
+.media .card-body p {
+  font-size: 12px;
+}
+.media .card-body h5 {
+  font-weight: bold;
+}
+.media .card-body button  {
+  font-size: 14px;
+}
+.media .media-sp-card img {
+  z-index: 1;
+  position: absolute;
+  margin-top: -35%;
+}
+.media .media-sp-card h6{
+  color: rgb(172, 164, 168);
+  font-size: 12px;
+}
+.media .card-img-top:hover {
+  transform: scale(1.1);
+}
+
+
+/* footers */
+.footer-one {
+  background-color: rgb(41, 42, 44);
+}
+.footer-one .nav .nav-link {
+  color: rgb(137, 138, 139);
+}
+.footer-one .social-links {
+  float: right;
+}
+.footer-one .terms  .nav {
+  flex-wrap: nowrap;
+}
+.footer-one .terms  .nav .nav-link {
+  font-size: 14px;
+}
+.footer-one .social-links li {
+  font-size: 24px;
+}
+.footer-one .social-links .nav-item a:hover {
+  color: rgb(218, 159, 38)!important;
+}
+
+.footer-two {
+  background-color: rgb(0, 0, 0);
+}
+.footer-two table,.footer-two p {
+  color: rgb(137, 138, 139)!important;
+}
+.footer-two .footer-head {
+  font-weight: bold;
+  color: rgb(137, 138, 139)!important;
+}
+.footer-two .table td,.footer-two p {
+  font-size: 12px;
+}
+.footer-two input[type="text"] {
+  font-size: 12px;
+  border-radius: 0;
+}
+.footer-two .input-group-append {
+  background-color: rgb(101, 155, 251);
+}
+.footer-two .input-group-append span {
+  background-color: rgb(101, 155, 251);
+  border: 0;
+}
+
+.footer-three {
+  background-color: rgb(22, 22, 22);
+  color: rgb(137, 138, 139)!important;
+}
+.footer-three p {
+  font-size: 12px;
+}
+.footer-three .footer-img img {
+  float: right;
 }

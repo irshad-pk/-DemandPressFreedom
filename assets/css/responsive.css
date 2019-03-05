@@ -10,77 +10,181 @@
     left: 0;
     bottom: -15px!important;
   }
+  .page-header {
+    font-size: 19px;
+  }
+  .events .ev-desc p {
+    font-size: 10px;
+  }
+  .media .card .place{
+    font-size: 8px;
+    height: 100%;
+    margin-top: 10px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .sign-button {
-    top: 37px!important;
+  .principles {
+    margin-top: 25px;
+  }
+  .principles .card-deck {
+    flex-flow: column;
+  }
+  .principles .principle-head a {
+    padding: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+  }
+  .principles .card-body {
+    padding-top: 0;
+    z-index: 1;
+    position: inherit;
+    margin-top: -6%;
+  }
+  .principles .principle-head {
+    margin-bottom: 26px;
+  }
+  .events .events-head a {
+    padding: 5px;
+  }
+  .footer-two .col-md-5 {
+    border-bottom: 1px solid rgb(128, 128, 128)
   }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-.dif-nav {
-  display: none;
-}
-.page-logo {
-  background-color: rgb(37, 37, 37);
-}
-  .sign-button {
-    top: 100px;
+  .dif-nav {
+    display: none;
   }
-  .my-nav {
-    width: 100%!important;
-    padding: 0;
-    background-color: rgb(33, 33, 33);
+  .more-link {
+    margin-bottom: 10px;
   }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-
 }
 
 
 
 /* Extra small devices (portrait phones, less than 576px) */
- /* No media query for `xs` since this is the default in Bootstrap */
+/* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .ev-tit .text-muted {
+    text-align: right;
+  }
+}
 
- }
-
- /* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .my-nav .navbar-collapse .navbar-nav .nav-item {
-    padding: 10px;
+  .principles {
+    margin-top: 50px;
   }
-  .my-nav .navbar-collapse ul  {
-    width: 100%;
+  .principles .principle-head a {
+    padding: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
   }
- }
+  .principles .principle-head {
+    margin-bottom: 26px;
+  }
+  .principles .card-body {
+    padding-top: 0;
+    z-index: 1;
+    position: absolute;
+    margin-top: 59%;
+  }
+  .more-link {
+    margin-top: 240px;
+  }
+  .navbar .navbar-nav {
+    background-color: rgb(33, 33, 33);
+  }
+  .navbar .navbar-nav .nav-link {
+    color: white!important;
+  }
+  .events .events-head a {
+    padding: 7px;
+  }
+  .footer-two .col-md-5 .table {
+    border-right: 1px solid rgb(128, 128, 128)
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .my-nav .navbar-collapse .navbar-nav .nav-item {
-    padding: 15px;
+  .more-link {
+    margin-top: 185px;
+    margin-bottom: 25px;
   }
-  .dif-nav {
-    width: 40%!important;
-  }
-  .sign-button {
-    display: none;
-  }
-  .page-logo {
-    background-color: black!important;
-  }
- }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .carousel-inner .carousel-item {
-    height: 650px;
+    height: 700px;
   }
- }
+  .more-link {
+    margin-top: 120px;
+  }
+  .events .ev-tit h6 {
+    font-size: 22px;
+  }
+  .events .ev-desc {
+    margin-top: 40px;
+  }
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) special */
+@media (max-width: 400px) {
+  .media .card-body img {
+    margin-top: -24%!important;
+    max-height: 72px!important;
+  }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .media .card-body img {
+    margin-top: -16%;
+    max-height: 72px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .media .card-body img {
+    max-height: 92px;
+    margin-top: -19%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .media .card-body img {
+    margin-top: -39%!important;
+  }
+  .media .media-sp-card img {
+    margin-top: -58%!important;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .media .card-body img {
+    margin-top: -28%!important;
+  }
+  .media .media-sp-card img {
+    margin-top: -44%!important;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
