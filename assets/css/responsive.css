@@ -1,30 +1,54 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .carousel-caption h5 {
-    font-size: 14px!important;
-  }
-  .carousel-caption p {
-    font-size: 10px!important;
-  }
-  .carousel-caption {
-    left: 0;
-    bottom: -15px!important;
-  }
   .page-header {
     font-size: 19px;
   }
   .events .ev-desc p {
-    font-size: 10px;
+    font-size: 9px;
   }
   .media .card .place{
     font-size: 8px;
     height: 100%;
     margin-top: 10px;
   }
+  .navbar-dark .navbar-toggler{
+    padding: 0.25rem 0.25rem;
+  }
+  .signin .num button {
+    font-size: 30px!important;
+  }
+  .signin .sign-btn button {
+    font-size: 25px!important;
+  }
+  .carousel .carousel-item .carousel-caption .text-left {
+    width: 100%!important;
+  }
+  .carousel .carousel-item .carousel-caption h2 {
+    font-size: 14px;
+  }
+  .carousel .carousel-item .carousel-caption p {
+    font-size: 10px;
+  }
+  .carousel .carousel-item .carousel-caption {
+    right: 0%;
+    bottom: 0px;
+    left: 3%;
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+  .principles .principle-head {
+    margin-left: 16px;
+  }
+  .media .media-head h6 {
+    padding: 4px 8px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .navbar {
+    background-color: black;
+  }
   .principles {
     margin-top: 25px;
   }
@@ -32,7 +56,7 @@
     flex-flow: column;
   }
   .principles .principle-head a {
-    padding: 5px;
+    padding: 4px 8px;
     font-weight: 600;
     text-decoration: none;
     color: black;
@@ -52,6 +76,9 @@
   .footer-two .col-md-5 {
     border-bottom: 1px solid rgb(128, 128, 128)
   }
+  .navbar .row .navbar-elements .navbar-nav .active .nav-link {
+    color: rgb(218, 159, 38)!important;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -61,6 +88,26 @@
   }
   .more-link {
     margin-bottom: 10px;
+  }
+  .navbar .row .navbar-elements .navbar-nav .first ,.navbar .row .navbar-elements .navbar-nav .second {
+    display: none;
+  }
+  .signin {
+    display: block;
+  }
+  .signin .num button {
+    border: 0!important;
+    background-color: white;
+    color: black!important;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .signin .sign-btn button {
+    border: 0!important;
+    background-color: rgb(218, 159, 38);
+    color: white!important;
+    font-weight: bold;
+    font-size: 36px;
   }
 }
 
@@ -83,16 +130,16 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .principles {
-    margin-top: 50px;
+    margin-top: 80px;
   }
   .principles .principle-head a {
-    padding: 7px;
+    padding: 6px 12px;
     font-weight: 600;
     text-decoration: none;
     color: black;
   }
   .principles .principle-head {
-    margin-bottom: 26px;
+    margin-bottom: 40px;
   }
   .principles .card-body {
     padding-top: 0;
@@ -103,9 +150,6 @@
   .more-link {
     margin-top: 240px;
   }
-  .navbar .navbar-nav {
-    background-color: rgb(33, 33, 33);
-  }
   .navbar .navbar-nav .nav-link {
     color: white!important;
   }
@@ -115,6 +159,19 @@
   .footer-two .col-md-5 .table {
     border-right: 1px solid rgb(128, 128, 128)
   }
+  .navbar .navbar-brand {
+    font-size: 36px;
+  }
+  .navbar .row .navbar-elements {
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+  }
+  .navbar .row .navbar-elements .navbar-nav .comn:hover {
+    background-color: white!important;
+  }
+  .navbar .row .navbar-elements .navbar-nav .comn:hover .nav-link {
+    color: rgb(218, 159, 38)!important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -123,12 +180,36 @@
     margin-top: 185px;
     margin-bottom: 25px;
   }
+  .navbar {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .navbar .row .navbar-elements .navbar-nav .active .nav-link {
+    color: rgb(218, 159, 38)!important;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 90px;
+    height: 85px;
+  }
+  .media {
+    padding-top: 90px!important;
+    padding-bottom: 40px;
+  }
+  .events .events-head {
+    padding-top: 30px;
+  }
+  .events .ev .ev-tit {
+    padding-top: 13px!important;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .carousel-inner .carousel-item {
-    height: 700px;
+    height: 800px;
   }
   .more-link {
     margin-top: 120px;
@@ -139,17 +220,39 @@
   .events .ev-desc {
     margin-top: 40px;
   }
-}
-
-
-
-/* Extra small devices (portrait phones, less than 576px) special */
-@media (max-width: 400px) {
-  .media .card-body img {
-    margin-top: -24%!important;
-    max-height: 72px!important;
+  .navbar .row .navbar-elements {
+    margin-top: 20px;
+  }
+  .navbar .row .navbar-elements .navbar-nav li {
+    padding: 15px;
+  }
+  .navbar .row .navbar-elements .navbar-nav .first ,.navbar .row .navbar-elements .navbar-nav .second {
+    padding: 0!important;
+  }
+  .navbar .row .navbar-elements .navbar-nav .first {
+    background-color: white;
+  }
+  .navbar .row .navbar-elements .navbar-nav .first .nav-link {
+    color: black!important;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 12px 70px;
+  }
+  .navbar .row .navbar-elements .navbar-nav .second {
+    background-color: rgb(218, 159, 38)!important;
+  }
+  .navbar .row .navbar-elements .navbar-nav .second .nav-link .show-btn {
+    font-size: 25px;
+    padding: 0px 77px;
+  }
+  .navbar .row .navbar-elements .navbar-nav .second .nav-link  .close {
+    float: inherit;
+    font-size: 25px;
+    margin-left: 267px;
   }
 }
+
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .media .card-body img {
@@ -164,6 +267,22 @@
     max-height: 92px;
     margin-top: -19%;
   }
+  .carousel .carousel-item .carousel-caption .text-left {
+    width: 100%!important;
+  }
+  .carousel .carousel-item .carousel-caption h2 {
+    font-size: 16px;
+  }
+  .carousel .carousel-item .carousel-caption p {
+    font-size: 12px;
+  }
+  .carousel .carousel-item .carousel-caption {
+    right: 0%;
+    bottom: 0px;
+    left: 10%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -173,7 +292,29 @@
   }
   .media .media-sp-card img {
     margin-top: -58%!important;
-}
+  }
+  .navbar {
+    background-color: rgb(37, 37, 37);
+  }
+  .navbar .navbar-nav{
+    padding: 17px 0px;
+  }
+  .navbar .navbar-nav .active .nav-link {
+    color: white!important;
+  }
+  .carousel .carousel-item .carousel-caption .text-left {
+    width: 50%;
+  }
+  .carousel .carousel-item .carousel-caption {
+    right: 0%;
+    bottom: 0px;
+    left: 10%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .events .ev-desc p {
+    font-size: 11px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -183,8 +324,72 @@
   }
   .media .media-sp-card img {
     margin-top: -44%!important;
-}
+  }
+  .navbar .row .navbar-elements {
+    margin-top: 15px;
+  }
+  .navbar .row .navbar-elements .navbar-nav li {
+    padding: 8px;
+  }
+  .navbar .row .navbar-elements .navbar-nav .first ,.navbar .row .navbar-elements .navbar-nav .second {
+    padding: 0!important;
+  }
+  .navbar .row .navbar-elements .navbar-nav .first {
+    background-color: white;
+  }
+  .navbar .row .navbar-elements .navbar-nav .first .nav-link {
+    color: black!important;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 60px;
+  }
+  .navbar .row .navbar-elements .navbar-nav .second {
+    background-color: rgb(218, 159, 38)!important;
+  }
+  .navbar .row .navbar-elements .navbar-nav .second .nav-link .show-btn {
+    font-size: 20px;
+    padding: 0px 57px;
+  }
+  .navbar .row .navbar-elements .navbar-nav .second .nav-link  .close {
+    float: inherit;
+    font-size: 23px;
+    margin-left: 267px;
+  }
+  .carousel .carousel-item .carousel-caption {
+    right: 0%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {}
+
+
+
+  /* special cases */
+  @media (max-width: 400px) {
+    .media .card-body img {
+      margin-top: -24%!important;
+      max-height: 72px!important;
+    }
+  }
+
+  @media (max-width: 325px) {
+    .page-header {
+      font-size: 17px!important;
+    }
+  }
+  @media (min-width: 1673px) {
+    .carousel-caption {
+      left: 21%;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .carousel-caption {
+      bottom: 87px;
+    }
+  }
+  @media (min-width: 1800px) {
+    .carousel-control-next, .carousel-control-prev {
+      width: 38%;
+    }
+  }

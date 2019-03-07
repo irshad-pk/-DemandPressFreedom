@@ -9,17 +9,73 @@ body {
 .color-change {
   color: white!important;
 }
-.navbar {
+.navbar .container .row {
+  width: 100%;
+}
+.navbar-dark .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.51);
+}
+.navbar .row .navbar-elements .navbar-nav .second .nav-link {
+  color: white!important;
+  padding-top: 12px;
+}
+.carousel .carousel-item .carousel-caption h2 ,.carousel .carousel-item .carousel-caption p {
+  font-weight: bold;
+}
+.carousel .carousel-item .carousel-caption .text-left {
+  width: 30%;
+}
+
+.signin ,.close {
+  display: none;
+}
+/* dropdown for signin */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
   position: absolute;
-  top: 0px;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+  background-color: rgb(218, 159, 38);
+  min-width: 295.78px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-.carousel-caption {
-  right: auto;
-  left: 10%;
+.dropdown-content form {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
+.dropdown-content h3 {
+  color: black;
+  font-weight: bold;
+  padding: 18px 16px;
+}
+.dropdown-content a {
+  color: black;
+  text-decoration: underline;
+}
+.dropdown-content input[type="text"] ,.dropdown-content input[type="email"] {
+  font-size: 14px;
+}
+.dropdown-content .form-check label {
+  font-size: 14px;
+}
+.show {
+  display: block;
+}
+.dropdown-content button {
+  background-color: rgb(37,37,37);
+  color: white;
+  border-radius: 0!important;
+}
+.dropdown-content button:hover {
+  color: white;
+}
+
 
 /* common color utility */
 .cm {
@@ -63,17 +119,22 @@ body {
   color: black;
 }
 .principles .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .events {
-  background-image: url('https://picsum.photos/1245/700/?blur');
+  background-image: url('media/blur.jpeg');
+}
+.events .row .col-md-6 ,.events .row .col-md-6 .col {
+  overflow: hidden!important;
 }
 .events .events-head a,.media .media-head {
   color: white;
   border: 2px solid white;
   font-weight: 600;
   text-decoration: none;
+  width: fit-content;
 }
 .events .events-head a:hover {
   color: white;
@@ -92,38 +153,46 @@ body {
   height: 100%;
   background-color: rgb(22, 20, 21);
 }
-.events .ev:hover {
+.events .col-md-6 .row:hover .ev {
   background-color: white;
 }
-.events .ev-tit h6:hover {
-  color: black;
+.events .col-md-6 .row:hover .ev-tit h6 ,.events .col-md-6 .row:hover .ev-tit p ,.events .col-md-6 .row:hover .ev-desc p {
+  color: black!important;
 }
 
-.events img:hover {
-  transform: scale(1.1);
+.events .col-md-6 .row:hover img {
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .media {
   background-color: rgb(37, 37, 39);
 }
+.media .media-head h6 {
+  padding: 6px 12px;
+}
 .media .card {
-  background-color: unset!important;
+  background-color: rgb(37, 37, 39);
   border: none;
+  overflow: hidden;
 }
 .media .card .social-icons ul{
   float: right;
   flex-wrap: nowrap;
 }
-.media .card .social-icons .nav-item a {
-  color: rgb(37, 37, 39);
-  padding: 0 3px;
-  font-size: 12px;
+.media .card .social-icons .nav-item .nav-link {
+  margin-right: -24px;
 }
-.media .card .social-icons .nav li {
-  border-radius: 20px;
+.media .card .social-icons .nav-item .nav-link .fab ,.media .card .social-icons .nav-item .nav-link .fas {
   background-color: white;
+  color: rgb(37, 37, 39);
+  border-radius: 63%;
+  font-size: 14px;
+  width: 26px;
+  height: 26px;
+  padding: 6px 7px;
 }
-.media .card .social-icons .nav li:hover {
+.media .card .social-icons .nav-item .nav-link i:hover {
   background-color: rgb(218, 159, 38);
 }
 .media .card-body img {
@@ -132,11 +201,15 @@ body {
   margin-top: -23%;
 }
 /* image rotate */
-.media .card-body img:hover {
+.media .card:hover .card-body img {
   cursor: default;
   transform: rotate(360deg);
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
   border-radius: 50%;
+}
+.media .card:hover .card-img-top {
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out 0s;
 }
 .media .card-body h5 ,.media .card-body p {
   color: rgb(172, 164, 168);
@@ -159,9 +232,6 @@ body {
   color: rgb(172, 164, 168);
   font-size: 12px;
 }
-.media .card-img-top:hover {
-  transform: scale(1.1);
-}
 
 
 /* footers */
@@ -178,10 +248,13 @@ body {
   flex-wrap: nowrap;
 }
 .footer-one .terms  .nav .nav-link {
-  font-size: 14px;
+  font-size: 13px;
+}
+.footer-one .terms  .nav .nav-link:hover {
+  color: rgb(218, 159, 38)!important;
 }
 .footer-one .social-links li {
-  font-size: 24px;
+  font-size: 22px;
 }
 .footer-one .social-links .nav-item a:hover {
   color: rgb(218, 159, 38)!important;
@@ -200,6 +273,9 @@ body {
 .footer-two .table td,.footer-two p {
   font-size: 12px;
 }
+.footer-two .table td:hover {
+  color: rgb(218, 159, 38)!important;
+}
 .footer-two input[type="text"] {
   font-size: 12px;
   border-radius: 0;
@@ -211,6 +287,10 @@ body {
   background-color: rgb(101, 155, 251);
   border: 0;
 }
+.footer-two .table td {
+  padding: 10px;
+}
+
 
 .footer-three {
   background-color: rgb(22, 22, 22);
@@ -221,4 +301,19 @@ body {
 }
 .footer-three .footer-img img {
   float: right;
+}
+
+
+.form-control ,.custom-select {
+  border-radius: 0!important;
+}
+.card-img-top {
+  border-top-left-radius: 0!important;
+  border-top-right-radius: 0!important;
+}
+.card-img {
+  border-radius: 0!important;
+}
+.card {
+  border-radius: 0!important;
 }
